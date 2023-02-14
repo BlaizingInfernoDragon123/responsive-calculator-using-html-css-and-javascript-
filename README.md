@@ -3,10 +3,10 @@ Hello everyone this is just a simple repository to display the working of respon
 |---------------|
 # View it here-
 
-<a href="https://blaizinginfernodragon123.github.io/Responsive-Calculator-using-html-css-and-javascript-/">
+<a href="https://blaizinginfernodragon123.github.io/responsive-calculator-using-html-css-and-javascript-/">
 
 ```
-https://blaizinginfernodragon123.github.io/Responsive-Calculator-using-html-css-and-javascript-/
+https://blaizinginfernodragon123.github.io/responsive-calculator-using-html-css-and-javascript-/
 ```
 </a>
 
