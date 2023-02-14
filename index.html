@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple calculator</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body onload="bodyload()">
+    <div id="loader"></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+    <div id="message">
+    </div>
+
+    <div class="calculator" id="calculator">
+        <div class="display-field" id="field">
+            <div class="top-field">
+                <p id="top">
+                    0
+                </p>
+            </div>
+            <div class="main-field">
+                <p id="main">
+                    
+                </p>
+            </div>
+        </div>
+        <div class="no-body">
+            <div class="operate-btns">
+                <button type="submit" class="operators-btn" value="+" onclick="insert('+')" data-operate>+</button>
+                <button type="submit" class="operators-btn" value="-" onclick="insert('-')" data-operate>-</button>
+                <button type="submit" class="operators-btn" value="÷" onclick="insert('/')" data-operate>÷</button>
+                <button type="submit" class="operators-btn" value="×" onclick="insert('*')" data-operate>×</button>
+            </div>
+            <div class="btns">
+                <button type="submit" class="no-btns" value="1" onclick = "insert(1)" data-btns>1</button>
+                <button type="submit" class="no-btns" value="2" onclick = "insert(2)" data-btns>2</button>
+                <button type="submit" class="no-btns" value="3" onclick = "insert(3)" data-btns>3</button>
+                <button type="submit" class="no-btns" value="4" onclick = "insert(4)" data-btns>4</button>
+                <button type="submit" class="no-btns" value="5" onclick = "insert(5)" data-btns>5</button>
+                <button type="submit" class="no-btns" value="6" onclick = "insert(6)" data-btns>6</button>
+                <button type="submit" class="no-btns" value="7" onclick = "insert(7)" data-btns>7</button>
+                <button type="submit" class="no-btns" value="8" onclick = "insert(8)" data-btns>8</button>
+                <button type="submit" class="no-btns" value="9" onclick = "insert(9)" data-btns>9</button>
+                <button type="submit" class="no-btns" onclick="insert('.')" value="." data-btns>.</button>
+                <button type="submit" class="no-btns" value="0" onclick = "insert(0)"data-btns>0</button>
+                <button type="submit" class="no-btns" onclick="backspace()" data-clear>⌫</button>
+            </div>
+            <div class="evaluate-btns">
+                <button type="submit" class="evaluate" onclick="main.innerHTML = '';console.log('The input field has been cleared')" data-clear>AC</button>
+                <button type="submit" class="evaluate" onclick="equal()" data-evaluate>=</button>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <h3>Copyright &copy; 2023<a href="https://github.com/blaizinginfernodragon123"><i class="fa fa-github"></i> BlaizingInfernoDragon123</a></h3>
+    </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
