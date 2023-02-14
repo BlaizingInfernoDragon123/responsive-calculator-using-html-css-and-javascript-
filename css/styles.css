@@ -1,0 +1,208 @@
+::selection{
+    color: #fff;
+    background-color: rgb(20, 173, 97);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Verdana, Arial;
+    text-align: center;
+    margin: 0;
+    margin-left: 24rem;
+    margin-top: 2.5rem;
+    transition: 250ms ease-in-out;
+    background: linear-gradient(1000deg,rgb(1, 209, 88),50%,rgb(43, 177, 255))
+}
+.calculator{
+    padding: 0px 40px;
+    width: 460px;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 540px;
+    background-color: #fff;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.display-field{
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 550px;
+    height: 130px;
+    margin-left: -2.8rem;
+    background-color: rgb(29, 28, 28);
+    color: #fff;
+    margin-top: -.9rem;
+    padding: 10px 10px;
+}
+.btns,.evaluate-btns,.operate-btns{
+    margin: .5rem;
+}
+.no-btns{
+    padding: 17.5px 60px;
+    background-color: transparent;
+    border: 1px solid #000;
+    margin: .1rem;
+    border-radius: 8px;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+}
+.operators-btn{
+    padding: 14px 40px;
+    width: 100px;
+    background-color: transparent;
+    border: 1px solid rgb(29, 28, 28);
+    font-size: 25px;
+    border-radius: 8px;
+    color: rgb(29, 28, 28);
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+}
+.evaluate{
+    padding: 10px 50px;
+    font-size: 20px;
+    border: 1px solid rgb(29, 28, 28);
+    border-radius: 8px;
+    background-color: transparent;
+    color: rgb(29, 28, 28);
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+}
+.no-btns:hover{
+    background-color: rgb(29, 28, 28);
+    color: #fff;
+    transition: 250ms ease-in-out;
+}
+.evaluate:hover{
+    background-color: rgb(29, 28, 28);
+    color: #fff;
+    transition: 250ms ease-in-out;
+}
+.operators-btn:hover{
+    background-color: rgb(29, 28, 28);
+    color: #fff;
+    transition: 250ms ease-in-out;
+}
+.top-field{
+    font-size: 15px;
+    float: right;
+    margin-right: 2rem;
+}
+.main-field{
+    font-size: 27px;
+    text-align: right;
+    margin-top: 4rem;
+    margin-right: 1.8rem;
+}
+#message{
+    color: red;
+    position: relative;
+    right: 260px;
+    margin-bottom: .2rem;
+}
+footer{
+    margin-top: 1rem;
+    margin-right: 25rem;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 35px;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    width: 470px;
+    background-color: #000;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+footer a{
+    text-decoration: none;
+    color: rgb(8, 218, 218);
+}
+footer a:hover{
+    color: rgb(0, 153, 255);
+}
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 60%;
+    border-top: 16px solid #272727;
+    -webkit-animation: spin 4s linear infinite;
+    animation: spin 0.7s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1.5s;
+    animation-name: animatebottom;
+    animation-duration: 1.5s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: none;
+  }
+@media screen and (max-width: 500px){
+    body{
+    
+    margin-left: .2rem;
+    }
+    .calculator{
+        width: 290px;
+        height: 500px;
+    }
+    .display-field{
+        width: 380px;
+    }
+    .operators-btn{
+        font-size: 19px;
+        padding: 10px 24px;
+        margin: .1rem;
+        width: auto;
+        font-size: 18px;
+    }
+    .no-btns{
+        font-size: 18px;
+        padding: 13px 35px;
+    }
+    .evaluate{
+        font-size: 19px;
+    }
+    #message{
+        position: relative;
+        right: 80px;
+        left: 10px;
+    }
+    footer{
+        width: 320px;
+        padding: 2px 20px;
+    }
+}
