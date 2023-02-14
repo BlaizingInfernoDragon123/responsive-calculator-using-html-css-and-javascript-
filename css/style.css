@@ -173,7 +173,8 @@ footer a:hover{
 @media screen and (max-width: 500px){
     body{
     
-    margin-left: .2rem;
+    margin-left: .3rem;
+    margin-right: .3rem;
     }
     .calculator{
         width: 290px;
