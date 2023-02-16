@@ -1,4 +1,4 @@
-::selection{
+a::selection{
     color: #fff;
     background-color: rgb(20, 173, 97);
 }
@@ -84,6 +84,10 @@ body{
     background-color: rgb(29, 28, 28);
     color: #fff;
     transition: 250ms ease-in-out;
+}
+.operators-btn:active,.evaluate:active,.no-btns:active{
+    border-radius: 8px;
+    border: 1px solid rgb(29, 28, 28);
 }
 .top-field{
     font-size: 15px;
