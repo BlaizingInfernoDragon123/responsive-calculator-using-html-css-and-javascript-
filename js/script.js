@@ -77,7 +77,8 @@ function insert(num){
     
     if (field.innerText.length >= 25) {
         message.innerHTML = 'Maximum number limit has been reached!!';
-        console.error("Maximum number limit has been reached!!")
+        console.error("Maximum number limit has been reached!!");
+        window.navigator.vibrate(300);
       }
 }
 function equal(){
